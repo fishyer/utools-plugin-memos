@@ -1,0 +1,45 @@
+{
+    "pluginName": "memos-plugin",
+    "description": "记录你的临时想法",
+    "author": "fishyer",
+    "homepage": "https://github.com/fishyer/utools-plugin-memos",
+    "logo": "./logo.png",
+    "preload": "preload.js",
+    "version": "0.0.1",
+    "features": [
+        {
+            "code": "set_api",
+            "explain": "设置你的个人 API",
+            "cmds": [
+                "setMemosApi"
+            ]
+        },
+        {
+            "code": "set_token",
+            "explain": "设置你的Access Token",
+            "cmds": [
+                "setMemosToken"
+            ]
+        },
+        {
+            "code": "send_to_database",
+            "explain": "发送文字到 memos",
+            "cmds": [
+                "sendToMemos",
+                {
+                    "type": "over",
+                    "label": "发送文字到Memos笔记",
+                    "minLength": 1
+                }
+            ]
+        },
+        {
+            "code": "add_to_database",
+            "explain": "快速记录到 memos",
+            "icon": "./logo.png",
+            "cmds": [
+                "addToMemos"
+            ]
+        }
+    ]
+}
